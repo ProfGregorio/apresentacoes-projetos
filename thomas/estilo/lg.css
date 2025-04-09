@@ -1,0 +1,30 @@
+.menu li a {
+    background-color: #E6D3D2;
+}
+
+.principal {
+    background-color: #E6D3D2;
+}
+
+.cabecalho {
+    background-color: #E2B6B8;
+}
+
+.title {
+    background-color: #E2B6B8;
+}
+
+.album:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.sobre {
+    background-color: #E6D3D2;
+}
+
+body {
+    background-image: url(../imgs/lgimgs/gagawpp.png); 
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
