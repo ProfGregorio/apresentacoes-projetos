@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/Rowdies-Light.ttf);
+}
+
+
+body{
+    cursor: url(../img/Temple_Cursor.png), auto;
+}
+
+a:hover{
+    cursor: url(../img/Temple_Cursor_maior.png), auto;
+}
+
+iframe{
+    text-align: center;
+}
+
+html{
+    width: 100%;
+    background-color: black;
+    font-family: Rowdies;
+}
+h2{
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+.body_site_principal{
+    background-image: url(../img/fundotrueeetalvez.jpg);
+    background-repeat: no-repeat;
+}
+p{
+    font-size: 40px;
+    color: rgb(184, 23, 23);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.p2{
+    font-size: 40px;
+    color: rgb(118, 48, 143);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.separador{
+    margin-left: 23%;
+    width: 1000px;
+}
+.loginho{
+    margin-left: 43%;
+}
+.gameplay{
+    border: solid 10px;
+    border-radius: 5px;
+    border-color: rgb(118, 48, 143);
+    background-color: rgb(28, 4, 51);
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 75px;
+}
+.artigos{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.artigos section{
+    display: flex;
+    flex-direction: column;
+}
+
+.artigos section h2{
+    font-size: medium;
+}
+.titulo_armas{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.link_sem_linha_em_baixo{
+    text-decoration: none;
+}
+.link_pra_voltar_pg_inicial{
+    text-decoration: underline rgb(138, 6, 6);
+}
+.exemplos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.artigos{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.armas_aura{
+    margin-top: 25px; 
+    color: rgb(134, 20, 20); 
+    font-size: 60px;
+}
+.armas_separacao{
+    margin-bottom: 100px;
+}
+th{
+    font-size: 40px;
+    font-family: Rowdies;
+    color: rgb(184, 23, 23);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+td{
+    font-size: 40px;
+    font-family: Rowdies;
+    color: rgb(184, 23, 23);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}

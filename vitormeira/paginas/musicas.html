@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Músicas</title>
+    <style>
+        @font-face {
+        font-family: "Barrio-static";
+        src: url(../css/fonts/Barrio-Regular.ttf);
+        }
+        html{
+            font-family: Barrio-static;
+        }
+        body{
+            background-position: center ; 
+            background-color: black;
+            border: 5px;
+            border-radius: 25px;
+            border-color: azure ;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*filter: brightness(50%); */
+            /* z-index: 1; */
+        }
+        body::before {
+                content: "";
+                background-position: center;
+                position: absolute;
+                inset: 0;
+                background-image: url(../img/imagem_kamai.jpg);            
+                background-repeat: no-repeat;
+                z-index: -1;
+                opacity: 0.2;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 25%;
+            top: 0;
+            min-width: 750px;
+            /*width: 100%;*/ /* Full width */
+            /*height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #000000;
+            opacity: 0.6;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 400%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        nav{
+            background-color: transparent; 
+            display: flex;
+            color: black;
+            font-size: xx-large;
+            flex-wrap: wrap;
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+
+        ul{
+            background-color: azure;
+            font-family: "Barrio-static";
+            /* background-color: antiquewhite; */
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            /*border-radius: 25px;*/
+            border-radius: 0px 15px 0px 25px; 
+            width: 40%;
+        }
+        ul li{
+            background-color: transparent;
+            padding: 5px;
+            /* text-align: center; */
+            border-radius: 10px;    
+        }
+        li:hover, li:active {font-size: 150%;}
+        .avo{
+            display: flex;
+
+            justify-content: space-evenly;
+        }
+        .avo .pais{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+        /* .avo .pais{
+            background-color: rgb(0, 0, 0);
+        } */
+        .avo .pais section{
+            display:flex;
+            flex-direction: column;
+        }
+        .avo .pais h2{
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            top: -100px;
+            margin-left: 130px;
+            color: #ffffff;
+            font-size: 250%;
+            /* opacity: 0.6;
+            transition: 0.3s; */
+        }
+        /* .avo .pais h2:hover {opacity: 1;} */
+        .avo .pais h3{
+            display: inline-block;
+            /* position: relative; */
+            top: 70px;
+            left: -180px;
+            color:aliceblue;
+            opacity: 0;
+            
+        }
+        .avo .pais img{
+            width: 50%;
+            opacity: 0.4;
+            transition: 0.3s;
+        }
+        .avo .pais img:hover {opacity: 1; border-radius: 25px;}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_self" >pili</a></li>
+            <li><a href="musicas.html" target="_self">pici</a></li>
+            <li><a href="bio.html" target="_self">pola</a></li>
+            <li><a href="quiz.html" target="_self">dini</a></li>
+        </ul> 
+    </nav>
+    <header>
+        <h1>.MÚSICAS.</h1>
+        <hr>
+    </header>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+          <div>
+              <iframe id="video" width="600" height="330" src="https://www.youtube.com/embed/ATyesfPWiLg?si=pmOKUGLsu7WLnjbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>   
+        </div>
+    </div>
+
+    <section class="avo">
+        <article class="pais um">
+            <section>
+                <img src="../img/6balas.avif"  onclick="abrirModal(this,0)" >
+                <h2>6 BALAS</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Oxóssi.avif" id="myBtn2" onclick="abrirModal(this,1)">
+                <h2>OXÓSSI</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Morgana.avif"  onclick="abrirModal(this, 2)">
+                <h2>MORGANA</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Gato.jpg" onclick="abrirModal(this, 3)">
+                <h2>GATO CERVEJA</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+        </article >
+        <article class="pais dois">
+            <section>
+                <img src="../img/O_treco.avif" onclick="abrirModal(this, 4)">
+                <h2>O TRECO</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Lana.avif" onclick="abrirModal(this, 5)">
+                <h2>LANA</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/O_limbo_do_menino.avif" onclick="abrirModal(this, 6)">
+                <h2>LIMBO DO MENINO SEM OLHOS </h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/carnaval.png" onclick="abrirModal(this, 7)">
+                <h2>CARNAVAL</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+        </article >
+        <article class="pais tres">
+            <section>
+                <img src="../img/Jhonny.avif" onclick="abrirModal(this, 8)">
+                <h2>JHONNY BOY</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Chamas.avif" onclick="abrirModal(this, 9)">
+                <h2>CHAMAS DA VIDA</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Lua_e_Sol.avif" onclick="abrirModal(this, 10)">
+                <h2>O SOL E A LUA</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+            <section>
+                <img src="../img/Emily.jpg" onclick="abrirModal(this, 11)">
+                <h2>O SONO DE EMILY</h2>
+                <h3>Local XPTO ABC</h3>
+            </section>
+        </article>
+    </section>
+    <script>
+
+        function abrirModal(btn, pos){
+            lista_videos = [
+            'CDKEtL9WUTc',
+            'QmN8cHspYrg',
+            'fwYar-oeGSk',
+            'GqSjAF41aDU',
+            'RxeYO9oe6F8',
+            'z-weWuwFmKM',
+            'QDM5WqZ64Nk',
+            'a7SkWyLhLbY',
+            'yKHxpKKkHxQ',
+            'gQth65uW8hM',
+            '30fbS1x0i5M',
+            't_WQ8enK7Lg',
+            ]
+            // alert(btn);
+            // console.log(btn);
+            var modal = document.getElementById("myModal");
+            var iframe = document.getElementById("video");
+            //alert(lista_videos[pos], pos);
+            video.src= "https://www.youtube.com/embed/"+lista_videos[pos]+"?si=pmOKUGLsu7WLnjbI";
+
+                    // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+        
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+
+        }
+    </script>
+
+<!-- 
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn","myBtn2");
+        
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script> -->
+</body>
+</html>

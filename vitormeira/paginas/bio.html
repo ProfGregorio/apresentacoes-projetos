@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/livro.webp" type="image/x-icon">
+    
+    <title>Biografia</title>
+    <style>
+
+        @font-face {
+            font-family: "Barrio-static";
+            src: url(../css/fonts/Barrio-Regular.ttf);
+        }
+        html{
+            font-family: Barrio-static
+        }
+        body{
+            background-position: center ; 
+            background-color: black;
+            border: 5px;
+            border-radius: 25px;
+            border-color: azure ;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*filter: brightness(50%); */
+            /* z-index: 1; */
+        }
+        body::before {
+            content: "";
+            background-position: center;
+            position: absolute;
+            inset: 0;
+            background-image: url(../img/imagem_kamai.jpg);            
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        main{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 400%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        nav{
+            background-color: transparent; 
+            display: flex;
+            color: black;
+            font-size: xx-large;
+            flex-wrap: wrap;
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+
+        ul{
+            background-color: azure;
+            font-family: "Barrio-static";
+            /* background-color: antiquewhite; */
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            /*border-radius: 25px;*/
+            border-radius: 0px 15px 0px 25px; 
+            width: 40%;
+        }
+        ul li{
+            background-color: transparent;
+            padding: 5px;
+            /* text-align: center; */
+            border-radius: 10px;    
+        }
+        li:hover, li:active {font-size: 150%;}
+        div img{
+            border-style: double;
+            border-radius: 25px 25px 25px 25px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: flex;
+        }
+        article{
+            display: flex;
+            color: white;
+            font-size: x-large;
+            width: 40%;
+            flex-direction: column;
+        }
+        p{
+            letter-spacing: 2.0pt;
+            color: white;
+        }
+        p a{
+            color: aliceblue;
+            font-size: xx-large
+        }
+        a{  
+            width: 7%;
+        }
+        article img:hover, article img:active {width: 115%;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_self" >pili</a></li>
+            <li><a href="musicas.html" target="_self">pici</a></li>
+            <li><a href="bio.html" target="_self">pola</a></li>
+            <li><a href="quiz.html" target="_self">dini</a></li>
+        </ul> 
+    </nav>
+    <header>
+        <h1>.BIOGRAFIA.</h1>
+        <hr>
+    </header>
+    <main>
+        
+        <div>
+            <img src="../img/KAMAITACHI PERFIL EDIT.avif" alt="Perfil Kamaitachi">
+        </div>
+
+
+        <article>
+            <p>Kamaitachi, nome artístico de Rafael da Cruz Gonçalves, é um músico e compositor nascido no Rio de Janeiro, Brasil. Desde os 12 anos, ele demonstrou interesse pela escrita, criando contos fictícios. Sua música é uma fusão de vários gêneros, incluindo indie, pop, rock, jazz e blues, refletindo sua versatilidade como artista. Kamaitachi atrai um público que aprecia letras que são tanto ácidas quanto doces. Seu nome artístico é uma homenagem ao folclore japonês, onde "Kama" significa cortes e "Itachi" remete a fuinhas, representando a dualidade de seu público. Kamaitachi é conhecido por sua capacidade de conectar-se com os ouvintes através de suas composições ecléticas e letras provocativas, estabelecendo-se como uma figura única e influente na cena musical brasileira</p>
+            <a href="https://www.youtube.com/@kamaitachi" target="_blank"><img src="../img/YoutubeKM.avif" alt="YouTube"></a>
+            <a href="https://open.spotify.com/intl-pt/artist/1ISc8zhrqxd5WrJMkMMLSm" target="_blank"><img src="../img/spotifyKM.avif" alt="spotify"></a>
+            <a href="https://www.tiktok.com/@kamaitachioficial" target="_blank"><img src="../img/TiktokKM.avif" alt="TikTok"></a>
+            <a href="https://www.instagram.com/kamaitachi" target="_blank"><img src="../img/InstagramKM.avif" alt="Instagram"></a>
+            <a href="https://twitter.com/Rafa_kamaitachi" target="_blank"><img src="../img/XKM.avif" alt="X"></a>
+        </article>
+    </main>
+    <p><a href="https://www.kamaitachi.com.br/" target="_blank">fonte</a></p>
+</body>
+</html>

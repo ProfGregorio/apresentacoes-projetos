@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/interrogas.png" type="image/x-icon">
+    <title>Quiz</title>
+    <style>
+        @font-face {
+            font-family: "Barrio-static";
+            src: url(../css/fonts/Barrio-Regular.ttf);
+        }
+        html{
+            font-family: Barrio-static
+        }
+        body{
+            background-position: center ; 
+            background-color: black;
+            border: 5px;
+            border-radius: 25px;
+            border-color: azure ;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: xx-large;
+            /*filter: brightness(50%); */
+            /* z-index: 1; */
+        }
+        body::before {
+            content: "";
+            background-position: center;
+            position: absolute;
+            inset: 0;
+            background-image: url(../img/imagem_kamai.jpg);            
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        main{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 400%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        nav{
+            background-color: transparent; 
+            display: flex;
+            color: black;
+            font-size: xx-large;
+            flex-wrap: wrap;
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+
+        ul{
+            background-color: azure;
+            font-family: "Barrio-static";
+            /* background-color: antiquewhite; */
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            /*border-radius: 25px;*/
+            border-radius: 0px 15px 0px 25px; 
+            width: 40%;
+        }
+        ul li{
+            background-color: transparent;
+            padding: 5px;
+            /* text-align: center; */
+            border-radius: 10px;    
+        }
+        li:hover, li:active {font-size: 150%;}
+        div img{
+            border-style: double;
+            border-radius: 25px 25px 25px 25px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: flex;
+        }
+        article{
+            display: flex;
+            color: white;
+            font-size: x-large;
+            width: 40%;
+            flex-direction: column;
+        }
+        p{
+            letter-spacing: 2.0pt;
+            color: white;
+            
+        }
+        label{
+            color: white;
+        }
+        form{
+            color: white;
+        }
+        .Caixas{
+            width: 40%;
+            height: 20px;
+            border-style: double;
+            border-radius: 25px;
+            font-size: x-large;
+        }
+        select{
+            width: 50%;
+            background-color: black;
+            border: 5px;
+            color: white;
+        }
+        option{
+            border-style: double;
+            border-radius: 25px;
+            height: 10px;
+            font-size: x-large;
+        }
+        .merda{
+            border-style: double;
+            border-radius: 25px;
+            height: 40px;
+            font-size: x-large;
+        }
+        .opcao{
+            border-style: double;
+            border-radius: 25px;
+            height: 10px;
+            font-size: x-large;
+        }
+        button{
+            font-size: xx-large;
+            border-style: double;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_self" >pili</a></li>
+            <li><a href="musicas.html" target="_self">pici</a></li>
+            <li><a href="bio.html" target="_self">pola</a></li>
+            <li><a href="quiz.html" target="_self">dini</a></li>
+        </ul> 
+    </nav>
+    <header>
+        <h1>.QUIZ.</h1>
+        <hr>
+    </header>
+    <form  id="frm1"  >
+        Qual o nome verdadeiro de Kamaitachi?: <br>
+        <label for="fname">Primeiro Nome:</label><br>
+        <input class="Caixas" type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input class="Caixas" type="text" id="lname" name="lname" value=""><br><br>
+
+        <p>Qual música fala sobre um antigo fora da lei?</p>
+        <select class="merda" id="cars1" name="cars">
+          <option class="opcao" value="6 Balas">Jhonny Boy</option>
+          <option class="opcao" value="Jhonny Boy">6 Balas</option>
+          <option class="opcao" value="Carnaval">O Treco</option>
+          <option class="opcao" value="Chamas">Chamas</option>
+        </select>
+        <br>
+
+        <p>Oxóssi atirou quantas flechas na guerra?</p>
+
+        <select id="cars2" name="cars" size="4" multiple>
+            <option value="volvo">13</option>
+            <option value="saab">1</option>
+            <option value="fiat">4</option>
+            <option value="audi">Nenhuma, varão</option>
+        </select>
+        <br>
+        <p>Quais destas músicas retratam um romance?</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Lana</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Gato Cerveja</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Morgana</label><br>
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="AirPlane">
+        <label for="vehicle4"> O sono de Emily</label><br>
+        <hr>
+        <button  onclick="myFunction()"> Enviar</button>
+      </form>
+
+<script>
+    function myFunction() {
+          //document.getElementById("frm1").submit();
+          form = document.getElementById("frm1");
+          console.log(form);
+          //cars1 = form.getElementById("car1s");
+          //console.log(cars1)
+          alert('Obrigado por responder o QUIZ');
+    }
+        </script>
+</body>
+</html>

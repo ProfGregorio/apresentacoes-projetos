@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Barrio-static";
+    src: url(./fonts/Barrio-Regular.ttf);
+}
+html{
+    font-family: Barrio-static;
+}
+body{
+    background-image: url(../img/imagem_kamai.jpg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-color: black;
+    border: 5px;
+    border-radius: 25px;
+    border-color: azure ;
+    border-style: solid;
+
+}
+main{
+    display: flex;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 0;
+}
+nav{
+    background-color: transparent; 
+
+    display: flex;
+    color: black;
+    font-size: xx-large;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: flex-end;
+}
+
+ul{
+    background-color: azure;
+    font-family: "Barrio-static";
+
+
+    /* background-color: antiquewhite; */
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    /*border-radius: 25px;*/
+    border-radius: 0px 15px 0px 25px; 
+    width: 40%;
+}
+ul li{
+    background-color: transparent;
+    padding: 5px;
+    /* text-align: center; */
+    border-radius: 10px;    
+}
+li:hover, li:active {font-size: 150%;}
+header{
+    width: 40%;
+}
+div{
+    width: 40%; 
+    height: 60%;
+    background-image: url(../img/O_limbo_do_menino.avif);
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    /* background-size: 40; */
+    animation-name: musicas;
+    background-repeat: no-repeat;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    border: 5px;
+    border-radius: 0px 25px 0px 20px;
+    border-color: azure;
+    border-style: solid;
+}
+@keyframes musicas{
+    0% {background-image: url(../img/O_limbo_do_menino.avif); background-repeat: no-repeat;} 
+    10% {background-image: url(../img/O_treco.avif);}
+    20% {background-image: url(../img/Oxóssi.avif); background-repeat: no-repeat;}
+    30% {background-image: url(../img/6balas.avif); background-repeat: no-repeat}
+    40% {background-image: url(../img/Bob.avif); background-repeat: no-repeat ;}
+    50% {background-image: url(../img/Morgana.avif); background-repeat: no-repeat;}
+    60% {background-image: url(../img/Lua_e_Sol.avif); background-repeat: no-repeat;}
+    70% {background-image: url(../img/Jhonny.avif); background-repeat: no-repeat;}
+    80% {background-image: url(../img/Lana.avif); background-repeat: no-repeat;}
+    90% {background-image: url(../img/Chamas.avif); background-repeat: no-repeat;}
+    100% {background-image: url(../img/O_limbo_do_menino.avif);}
+}

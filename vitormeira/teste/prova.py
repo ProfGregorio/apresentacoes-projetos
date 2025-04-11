@@ -1,0 +1,1 @@
+with open("pagina.html",'w').write(",h1>")

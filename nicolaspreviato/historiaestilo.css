@@ -1,0 +1,119 @@
+@font-face {
+    font-family: gta;
+    src: url(./ChaletComprimeCologneSixty/chaletcomprime-cologneeighty.ttf);
+}
+body{
+    background-image: url("./imagens/gtav-logo.svg");
+    background-image: url("./imagens/911bff9fca5209b94dd22bcba795eefdd4b71993.jpg");
+    background-repeat: no-repeat;
+    margin: 0%;
+    /* background-attachment: fixed; */
+    /* background-color: black; */
+    
+    
+}
+html{
+    margin: 0%;
+}
+/* margem do site */
+.cabecalho{
+    width: 100%; /* tamanho */
+    margin: 0%; /* margem */
+    background-color: black; /* cor do cabeçalho */
+    display: flex; /* posição do icone grand theft */
+    height: 50px; /* grossura do cabeçalho */
+    flex-wrap: wrap; /* Os itens vão para a linha debaixo */
+    align-items: center; /* alinhar o texto */
+    
+
+    /* cabeçalho do site */
+}
+.cabecalho img{ /* logo do gta no cabeçalho */
+    width: 386px;
+    height: 47px;
+    position: relative;
+    top: -11px;
+    left: 0px;
+    right: 0px;
+}
+.cabecalho li{ 
+    list-style: none;
+
+}
+.cabecalho a{ /* texto do cabeçalho */
+    text-decoration: none;
+    color: white;
+    font-size: 230%;
+    vertical-align: top;
+    position: relative;
+    top: -9px;
+    left: 1320px;
+    right: 0pt;
+    font-family: gta;
+}
+/* titulo */
+
+/* .title{
+    background-color: black;
+} */
+
+
+
+.title p{
+    font-family: gta;
+    font-size: 156%;
+    color: white;
+    text-shadow: -2px 1px 0px rgb(0 0 0 / 93%), -2px 1px 3px rgb(0 0 0);
+    width: 90%;
+    padding-top: 0%;
+    padding-left: 6%;
+    padding-right: 200px;   
+}
+
+/* 
+.controle-transparencia{
+    background-color: black;
+    opacity: 0.5;
+}
+.controle-transparencia::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+
+    z-index: -1;
+    opacity: 1;
+} */
+.title h1{
+    font-family: gta;
+    position: relative;
+    padding-top: 0%;
+    padding-left: 6%;
+    padding-right: 200px;
+    font-size: 70pt;
+    color: white;
+    text-shadow: -4px 3px 3px rgb(0 0 0 / 43%), -1px -1px 2px rgb(0 0 0);
+    width: 0%;
+}
+/* .title p{
+    font-family: gta;
+    font-size: 156%;
+    color: white;
+    text-shadow: -2px 1px 0px rgb(0 0 0 / 93%), -2px 1px 3px rgb(0 0 0);
+    width: 90%;
+} */
+.title1{
+    display: flex;
+    justify-content: center;
+}
+.title1 img{
+    position: relative;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    margin: 0%;
+    width: 600px;
+
+    background-color: black;
+    
+}

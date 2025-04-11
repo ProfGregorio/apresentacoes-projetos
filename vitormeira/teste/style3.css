@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Barrio-static";
+    src: url(./fonts/Barrio-Regular.ttf);
+}
+
+body{
+    background-image: url(/img/imagem_kamai.jpg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-color: black;
+    border: 10px;
+    border-radius: 25px;
+    border-color: azure ;
+    border-style: solid;
+
+}
+
+nav{
+    background-color: transparent; 
+    display: flex;
+    color: black;
+    font-size: xx-large;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: flex-end;
+}
+
+ul{
+    background-color: azure;
+    font-family: "Barrio-static";
+
+
+    /* background-color: antiquewhite; */
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    /*border-radius: 25px;*/
+    border-radius: 0px 0px 0px 25px; 
+    width: 40%;
+}
+ul li{
+    background-color: transparent;
+    padding: 5px;
+    /* text-align: center; */
+    border-radius: 10px;    
+}
+li:hover, li:active {font-size: 150%;}
