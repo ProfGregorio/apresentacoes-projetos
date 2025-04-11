@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Torre de Desafios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Staatliches', cursive;
+      text-align: center;
+    }
+
+    h1 {
+      color: red;
+      font-size: 48px;
+      margin-top: 40px;
+    }
+
+    .torre {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .fase {
+      width: 200px;
+      height: 60px;
+      background: #222;
+      border: 2px solid red;
+      color: orange;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .fase:hover {
+      transform: scale(1.05);
+      background: crimson;
+    }
+  </style>
+</head>
+<body>
+  <h1>Torre da História</h1>
+  <div class="torre">
+    <a class="fase" href="capitulo1.html">Capítulo 1: Início</a>
+    <a class="fase" href="capitulo2.html">Capítulo 2: Torneio Mortal</a>
+    <a class="fase" href="capitulo3.html">Capítulo 3: Shao Kahn</a>
+    <!-- Continue até o final da história -->
+  </div>
+</body>
+</html>

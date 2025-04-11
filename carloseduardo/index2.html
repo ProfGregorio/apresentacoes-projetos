@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK9 Interface</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/8G6n3N3.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: 'Staatliches', sans-serif;
+            color: white;
+            cursor: pointer;
+            transition: background 0.5s ease-in-out;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+            margin-left: 30px;
+        }
+
+        .menu-item {
+            font-size: 28px;
+            color: #aa3a2d;
+            text-shadow: 1px 1px 2px black;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .menu-item:hover,
+        .menu-item.selected {
+            color: #ffff99;
+            text-shadow: 2px 2px 4px red;
+        }
+    </style>
+</head>
+<body onclick="changeBackground();">
+    <div class="menu-container">
+        <div class="menu-item selected">1 JOGADOR</div>
+        <div class="menu-item">KOMBAT</div>
+        <div class="menu-item">MODO HISTÓRIA</div>
+        <div class="menu-item">TORRE DOS DESAFIOS</div>
+        <div class="menu-item">TREINAMENTO</div>
+        <div class="menu-item">ONLINE</div>
+        <div class="menu-item">EXTRAS</div>
+        <div class="menu-item">OPÇÕES</div>
+    </div>
+
+    <script>
+        const images = ['Mortal_Kombat_9_Intro_Main_Menu_Theme_Song_PS3_1080p.gif', 'Xt-Zms.gif'];
+        let currentIndex = 0;
+        document.body.style.backgroundImage = `url('./imagens/${images[currentIndex]}')`;
+
+        function changeBackground() {
+            currentIndex = currentIndex === 0 ? 1 : 0;
+            document.body.style.backgroundImage = `url('./imagens/${images[currentIndex]}')`;
+        }
+    </script>
+</body>
+</html>

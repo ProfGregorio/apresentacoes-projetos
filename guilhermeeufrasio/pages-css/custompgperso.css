@@ -1,0 +1,113 @@
+@font-face {
+    font-family: ahronbd;
+    src: url(../css/aharoni-bold-font/ahronbd.ttf)
+}
+ul li{
+    list-style: none;
+}
+body{
+    background-image: url("../imgs/fundo-personagens.jpg"); 
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-color: #fbe1a6;;
+    background-attachment: fixed;
+    background-size: 990px;
+    background-position-y: 396px
+}
+.logo{
+    text-align:center;
+}
+.menu{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu ul li{
+    font-size: xx-large;
+    font-family: ahronbd;
+}
+.intro{
+    text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em #000000;
+    font-family: ahronbd;    
+    display:flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}   
+.personagens{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.personagens div{
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-direction: row; */
+    width:100%;
+    justify-content: flex-end;
+}
+
+.personagens.par  div{
+    flex-direction: row; 
+
+}
+/* .personagens.impar .desc{
+    order: 2;
+    
+} */
+.personagens.impar{
+        /* background-color: blue; */
+
+    /* display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-end; */
+
+}
+
+.personagens h2{
+    text-align: center;
+    width: 100%;
+    order: 1;
+}
+.personagens .desc img{
+    order: 3;
+}
+
+
+.personagens .desc p{
+    order: 2;
+
+}
+
+.intro li{
+    width: 30%;
+}
+.intro p{
+    vertical-align: top;
+}
+.opcoes a{
+    text-decoration: none;
+    color:white
+}
+.opcoes a:hover{
+    text-decoration: underline;
+}
+.intro img{
+    width: 330px;
+    height: 350px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}

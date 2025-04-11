@@ -1,0 +1,298 @@
+/* STYLE CSS RED DEAD REDEMPTION II */
+
+/* Fonte */
+@font-face {
+    font-family: chineserocksrog;
+    src: url(fonte/chineserocksrg.otf);
+}
+/* -- */
+
+/* Corpo */
+html{
+    height: 100%;
+    font-family: chineserocksrog;
+    letter-spacing: 1.05pt;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+p{
+    background-color: white;
+    color: white;
+    font-size: large;
+}
+.conteudo{
+    flex-basis: 80%;   
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.imgprincipal{
+    width: 100%;
+    height: 99%;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo.principal{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 350px;
+    padding-left: 30px;
+}
+
+.rockstar{
+    width: 100px;
+    margin-top: 810px;
+    margin-left: 1365px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    text-align: center;
+    font-size: 60px;
+}
+
+/* -- */
+
+/* Menu */
+nav{
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 18px;
+}
+
+.textindex{
+    padding-left: 30px;
+    padding-right: 0%;
+    margin-right: 0px;
+    border: 0px;
+    color: white;
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.menu ul{
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+    margin-left: -40px;
+    color: white;
+}
+
+li{
+    margin: 10px 0;
+    padding: 20px 0px;
+    background-color: red;
+    margin-bottom: 30px;
+}
+
+ul li.item{
+    height: 45px;
+}
+
+
+.menu-compendio{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 20px;   
+}
+
+.menu-desafios{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 20px;   
+}
+
+.menu-lendarios{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 20px;   
+}
+/* -- */
+
+/* Historia */
+.titulo-cap{
+    color: red;
+    font-size: 30px;   
+}
+
+.hist{
+    color: white;
+    font-size: 20px;
+    margin:15px 0;
+}
+
+
+.imghist{
+    width: 40%;
+    margin: 35px;
+    margin-left: 30%;
+    margin-bottom: 70px;
+}
+/* -- */
+
+/* Animais lendarios */
+.lendarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tittleanilend{
+    font-size: 40px;
+}
+.animaislend{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.imagensanimaislen{
+    width: 570px;
+    height: 300px;
+    margin: 30px;
+}
+.explicacao{
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.subtitulolendani{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.listacaca{
+    background-color: white;
+    padding: 0;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+/* -- */
+
+/* Personagens */
+.personagens{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    
+}
+.p{
+    margin: 30px;
+    color: black;
+    border-style: solid;
+    padding: 10px;
+    border-color: red;
+}
+
+.imgp{
+    width: 400px;
+    height: 240px;
+}
+
+/* Rodape */
+.controle-rodape{
+    display: flex;
+    width: 100%;
+}
+.rockstar-rodape{
+    width: 80px;
+}
+
+footer{
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p{
+    background-color: black;
+}
+
+.controle-rodape footer nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.feitopor{
+   width: 100%;
+}
+
+.redes a{
+    width: 60px;
+}
+
+.redes img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+/* -- */
+
+/* Hover */
+.textindex:hover{
+    color: gainsboro;
+    font-size: 48px;
+}
+
+.redes img:hover{
+    width: 25px;
+    height: 25px;
+}
+
+.personagens .p:hover{
+    transform: scale(1.05); 
+}
+/* -- */
+

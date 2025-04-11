@@ -1,0 +1,210 @@
+@font-face {
+    font-family: DMSerifTextRegular;
+    src: url(./fonts/DMSerifText-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: DMSerifTextItalic;
+    src: url(./fonts/DMSerifText-Italic.ttf);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Niconne&display=swap');
+
+
+body,ul, li, p,a{
+    margin: 0;
+    padding:0px;
+    list-style: none;
+    font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: e3e3e3;
+    font-family: DMSerifTextRegular;
+    
+
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: e3e3e3;
+}
+
+.menu{
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.menu li{
+    margin-left: 10px;
+    border-style: solid;
+    border-color: e3e3e3;
+    border-radius: 5px;
+    /* text-shadow: #fc0 1px 0 10px; */
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background-color: e3e3e3;
+}
+
+.logo img{
+    max-width: 160px;
+    width: 160px;
+    max-height: 100px;
+    height: 100px;
+}
+
+.coluna{
+    display: flex;
+    gap:250px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.coluna img{
+    max-width: 300px;
+    width: 300px;
+    max-height: 300px;
+    height: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: e3e3e3; 
+    margin:80px;
+    margin-top: 15px;
+}
+
+.ordem{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    display: flex;
+    gap: 250px;
+    align-items: center;
+}
+
+.ordem li {
+    margin-left: 10px;
+    align-items: center;
+    color:e3e3e3;
+ 
+}
+
+.controleimgFlor{
+    display:flex;
+    justify-content:flex-end;
+
+}
+.controleimgFlor div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+}
+.controleimgFlor img{
+    flex-grow: 1;
+    margin-bottom: 10%;
+}
+.controleimgFlor h1, a{
+    width: 100%;
+    text-align: center;
+    color:#696969;
+}
+
+
+.florBranca{
+    max-width: 1000px;
+    width: 1400px;
+    max-height: 1000px;
+}
+
+.formatTexto{
+    font-size: 15;
+    color: bisque;
+    text-align: center;
+
+}
+.formatTexto{
+    font-size: 15;
+    color:black;
+    text-align: justify;
+    background-color: #c1c1c1;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    letter-spacing: 1pt;
+}
+
+.formatTitulo{
+    font-size: 25;
+    color:black;
+    font-weight: bold;
+    background-color: #c1c1c1 ;
+    text-align: center;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    background-color: #c1c1c1;
+}
+.informacoes p{
+    width: 75%;
+    padding: 10px;
+    display: block;
+}
+
+.controleVela{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+.controleVela div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.controleVela img{
+    flex-grow: 1;
+    margin-bottom: 1%;
+    max-width: 250px;
+    width: 250px;
+    max-height: 250px;
+    height: 250px;
+
+}
+
+.controleVela h1, a{
+    width: 70%;
+    text-align: center;
+    color:#696969;
+}
+
+.vela {
+    max-width: 350px;
+    width: 350px;
+    max-height: 350px;
+}
+

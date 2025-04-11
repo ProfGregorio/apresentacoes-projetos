@@ -1,0 +1,119 @@
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+@font-face {
+    font-family: dead;
+    src: url(./new.zip);
+}
+html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.cabecario {
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 78px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecario img {
+    width: 350px;
+    margin-inline: 30px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.menu li img {
+    width: 100px;
+    margin-inline-end: 20px;
+}
+.menu img {
+    margin: 0;
+    width: 90px;
+}
+
+.ini{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+h1{
+    color: white;
+    font-family: dead;
+    display: flex;
+    justify-content: center;
+
+}
+.dois h2{
+    color: white;
+    font-family: dead;
+}
+.pc li{
+    color: white;
+    font-family: dead;
+}
+.dois{
+    color: white;
+    font-family: dead;
+    display: flex;
+    justify-content: space-evenly;
+}
+.segundo{
+    display: flex;
+    justify-content: center;
+}
+.segundo img{
+    width: 10%;
+
+}
+.um{
+    display: flex;
+    justify-content: center;
+}
+.um li{
+    color: white;
+    font-family: dead;
+
+}
+.um h2{
+    color: white;
+    font-family: dead;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.reso{
+    display: flex;justify-content: center;
+    padding-top: 10px;
+}
+.reso img{
+    width: 40%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 10px;
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: ahronbd;
+    src: url(aharoni-bold-font/ahronbd.ttf)
+}
+body{
+    background-image: url("../imgs/fundo-groove.jpg"); 
+    margin: 0%;
+    
+}
+.logo{
+    text-align: center;
+}
+.menu{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu ul li{
+
+    font-size: xx-large;
+    font-family: ahronbd;
+}
+.intro{
+    text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em #000000;
+    font-family: ahronbd;
+}
+.opcoes a{
+    text-decoration: none;
+    color:white
+}
+.opcoes a:hover{
+    text-decoration: underline;
+}

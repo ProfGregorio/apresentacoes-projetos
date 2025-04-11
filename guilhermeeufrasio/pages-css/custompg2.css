@@ -1,0 +1,175 @@
+@font-face {
+    font-family: ahronbd;
+    src: url(../css/aharoni-bold-font/ahronbd.ttf)
+}
+ul li{
+    list-style: none;
+}
+body{
+    background-image: url("../imgs/fundo-gangues.jpg"); 
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-color: #fdf5de;
+    background-position-y: 120px;
+    background-position-x: -315px;
+    background-attachment: fixed;
+}
+.logo{
+    text-align:center;
+}
+.menu{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu ul li{
+    font-size: xx-large;
+    font-family: ahronbd;
+}
+.intro{
+    text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em #000000;
+    font-family: ahronbd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.intro h2{
+    text-align: center;
+    
+    font-size: 30px;
+    padding-top: 25px; 
+}
+.intro p{
+    text-align: left;
+    padding-left: 130px;
+    font-size: 25px;
+    padding-right: 130px;
+}
+
+.intro img{
+    width: 375px;
+    height: 280px;
+}
+.opcoes a{
+    text-decoration: none;
+    color:white
+}
+.opcoes a:hover{
+    text-decoration: underline;
+}
+.ballas img{
+    border: 5px solid #8e30db;
+    border-radius: 10px;
+    margin: 30px;
+}
+.ballas p{
+    text-align: left;
+    margin-left: 130px;
+    font-size: 25px;
+    margin-right: 130px;
+    background-color: #540991;
+    border-radius: 10px;
+    border: solid 3px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    padding: 30px;
+}
+.grove img{
+    border: 5px solid rgb(36, 150, 21);
+    border-radius: 10px;
+    margin: 30px;
+}
+.grove p{
+    text-align: left;
+    margin-left: 130px;
+    font-size: 25px;
+    margin-right: 130px;
+    background-color: #1b6e0b;
+    border-radius: 10px;
+    border: solid 3px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    padding: 30px;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+    padding-bottom: initial;
+}
+.vagos img{
+    border: 5px solid rgb(228, 213, 11);
+    border-radius: 10px;
+    margin: 30px;
+}
+.vagos p{
+    text-align: left;
+    margin-left: 130px;
+    font-size: 25px;
+    margin-right: 130px;
+    background-color: #ffea2c;
+    border-radius: 10px;
+    border: solid 3px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    padding: 25px;
+}
+.varrios img{
+    border: 5px solid rgb(62, 223, 196);
+    border-radius: 10px;
+}
+.varrios p{
+    text-align: left;
+    margin-left: 130px;
+    font-size: 25px;
+    margin-right: 130px;
+    background-color: rgb(62, 223, 196);
+    border-radius: 10px;
+    border: solid 3px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    padding: 25px;
+}
+.rifa img{
+    border: 5px solid rgb(28 187 187);
+    border-radius: 10px
+}
+.triads img{
+    border: 5px solid rgb(43, 44, 44);
+    border-radius: 10px
+}
+.boys img{
+    border: 5px solid gold;
+    border-radius: 10px
+}
+.mapas{
+    text-align: center;
+}
+.intro .loc{
+    width: 835px;
+    height: 505px;
+}
+.intro .bal{
+    width: 835px;
+    height: 505px;
+}
+.intro .vag{
+    width: 835px;
+    height: 505px;
+}
+.intro .var{
+    width: 835px;
+    height: 505px;
+}
